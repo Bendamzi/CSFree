@@ -1,12 +1,10 @@
 age = eval(input("Enter age: "))
-if age == 5:
-    print("Go to kindergarten")
-for i in range(6,18):
-    if age == i:
-        print("Go to grades 1 through 12")
-        
-if age => 18:
-    print("Go to college")
+if age < 5:
+    print("Too young for school")
+elif age == 5:
+    print("Go to Kindergarten")
+elif (age > 5) and (age <= 17):
+    grade = age - 5
+    print("Go to {} grade".format(grade))
 else:
-    print("Sorry! wait till you're old enough")    
-
+    print("Go to college")
