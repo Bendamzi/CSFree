@@ -1,8 +1,8 @@
-secret_number = 7
+numbers = [10, 20, 30, 40, 50]
 
-while True:
-    guess = int(input("Guess a number between 1 and 10 : "))
-    
-    if guess == secret_number:
-        print("You guessed it")
-        break
+product_of_numbers = 1
+
+for i in numbers:
+    product_of_numbers *= i
+
+print("Product of elements in the list:", product_of_numbers)
