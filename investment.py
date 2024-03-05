@@ -22,9 +22,9 @@ cal = HighlightCalendar(highlight_day)
 money = float(money)
 
 interest_rate = float(interest_rate) *.01
-n = int(input("Duration: "))
+n = int(input("Duration (in 3 weeks): "))
 for i in range (n):
     money = money + (money * interest_rate)
     
-print(f"Hi {name}, your ROI after 3 weeks is {money :.2f} Naira only, for the date in the calendar below.")
+print(f"Hi {name}, your accumulated revenue on investment after 3 weeks is {money :.2f} Naira only, for the date in the calendar below.")
 cal.prmonth(2024, month)
